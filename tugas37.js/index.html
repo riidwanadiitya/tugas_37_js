@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belajar JavaScript - NIOMIC</title>
+</head>
+
+<body>
+    <button type="button" onclick="pasDitekan()" name="button">Jalankan</button> <br><br>
+    <hr> Atribut <b>getNamedItem()</b> :
+    <p id="contoh1">contoh</p>
+    <hr> Atribut <b>name()</b>
+    <p id="contohName">contoh</p>
+    <hr>Atribut <b>length()</b>
+    <p id="contohLength">contoh</p>
+    <hr>
+
+
+
+    <script>
+        function pasDitekan() {
+
+            var a = document.getElementsByTagName("button")[0];
+            var hasil1 = a.attributes.getNamedItem("onclick").value;
+            var hasil2 = a.attributes[1].name;
+            var hasil3 = a.attributes.length;
+            document.getElementById("contoh1").innerHTML = hasil1;
+            document.getElementById("contohName").innerHTML = hasil2;
+            document.getElementById("contohLength").innerHTML = hasil3;
+
+
+
+
+            // hasil1();
+            // hasil2();
+            // hasil3();
+
+            // function hasil1() {
+            //     var a = document.getElementsByTagName("button")[0];
+            //     var hasil1 = a.attributes.getNamedItem("onclick").value;
+            //     document.getElementById("contoh1").innerHTML = hasil1;
+            // };
+
+            // function hasil2() {
+            //     var a = document.getElementsByTagName("button")[0];
+            //     var hasil2 = a.attributes[2].name;
+            //     document.getElementById("contohName").innerHTML = hasil2;
+            // };
+
+            // function hasil3() {
+            //     var a = document.getElementsByTagName("button")[0];
+            //     var hasil3 = a.attributes.length;
+            //     document.getElementById("contohLength").innerHTML = hasil3;
+            // };
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
